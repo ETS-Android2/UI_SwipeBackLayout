@@ -5,14 +5,14 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.support.annotation.FloatRange;
-import android.support.annotation.IntDef;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.widget.ViewDragHelper;
+import androidx.annotation.FloatRange;
+import androidx.annotation.IntDef;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.view.MotionEventCompat;
+import androidx.core.view.ViewCompat;
+import androidx.customview.widget.ViewDragHelper;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -98,6 +98,7 @@ public class SwipeBackLayout extends ViewGroup {
         decorView.addView(this);
     }
 
+    // 测量设置自己的宽高
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
@@ -146,7 +147,7 @@ public class SwipeBackLayout extends ViewGroup {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        switch (MotionEventCompat.getActionMasked(ev)) {
+        switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 downX = ev.getRawX();
                 downY = ev.getRawY();
@@ -168,7 +169,7 @@ public class SwipeBackLayout extends ViewGroup {
                 break;
         }
         boolean handled = mDragHelper.shouldInterceptTouchEvent(ev);
-        return handled ? handled : super.onInterceptTouchEvent(ev);
+        return handled || super.onInterceptTouchEvent(ev);
     }
 
     @Override
@@ -322,6 +323,7 @@ public class SwipeBackLayout extends ViewGroup {
 
     public void finish() {
         ((Activity) getContext()).finish();
+        ((Activity) getContext()).overridePendingTransition(0,0);
     }
 
     private boolean isSwipeEnabled() {

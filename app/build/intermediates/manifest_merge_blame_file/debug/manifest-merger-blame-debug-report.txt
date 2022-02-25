@@ -1,0 +1,125 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.gw.swipebacksample"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:6:5-81
+12-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:7:5-80
+13-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:7:22-77
+14
+15    <application
+15-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:9:5-57:19
+16        android:name="com.gw.swipebacksample.MainApplication"
+16-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:10:9-40
+17        android:allowBackup="true"
+17-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:11:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.0.0] /Users/guoyong/.gradle/caches/transforms-2/files-2.1/e85dcd5e8f3035a8c9bb196703c010cb/core-1.0.0/AndroidManifest.xml:22:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:12:9-43
+21        android:label="@string/app_name"
+21-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:13:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:14:9-54
+23        android:supportsRtl="true"
+23-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:15:9-35
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme" >
+25-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:16:9-40
+26        <activity android:name="com.gw.swipebacksample.MainActivity" >
+26-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:17:9-23:20
+26-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:17:19-47
+27            <intent-filter>
+27-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:18:13-22:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:19:17-69
+28-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:19:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:21:17-77
+30-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:21:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:24:9-26:67
+34            android:name="com.gw.swipebacksample.activity.CommonActivity"
+34-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:25:13-52
+35            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+35-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:26:13-64
+36        <activity
+36-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:27:9-29:67
+37            android:name="com.gw.swipebacksample.activity.WxCommonActivity"
+37-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:28:13-54
+38            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+38-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:29:13-64
+39        <activity
+39-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:30:9-32:67
+40            android:name="com.gw.swipebacksample.activity.CommonAttachToActivity"
+40-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:31:13-60
+41            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+41-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:32:13-64
+42        <activity
+42-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:33:9-35:67
+43            android:name="com.gw.swipebacksample.activity.ScrollViewActivity"
+43-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:34:13-56
+44            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+44-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:35:13-64
+45        <activity
+45-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:36:9-38:67
+46            android:name="com.gw.swipebacksample.activity.HorizontalScrollViewActivity"
+46-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:37:13-66
+47            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+47-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:38:13-64
+48        <activity
+48-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:39:9-41:67
+49            android:name="com.gw.swipebacksample.activity.NestedScrollViewActivity"
+49-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:40:13-62
+50            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+50-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:41:13-64
+51        <activity
+51-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:42:9-44:67
+52            android:name="com.gw.swipebacksample.activity.ListViewActivity"
+52-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:43:13-54
+53            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+53-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:44:13-64
+54        <activity
+54-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:45:9-47:67
+55            android:name="com.gw.swipebacksample.activity.RecyclerViewActivity"
+55-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:46:13-58
+56            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+56-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:47:13-64
+57        <activity
+57-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:48:9-50:67
+58            android:name="com.gw.swipebacksample.activity.ViewPagerActivity"
+58-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:49:13-55
+59            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+59-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:50:13-64
+60        <activity
+60-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:51:9-53:67
+61            android:name="com.gw.swipebacksample.activity.WebViewActivity"
+61-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:52:13-53
+62            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+62-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:53:13-64
+63        <activity
+63-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:54:9-56:67
+64            android:name="com.gw.swipebacksample.activity.SwipeRefreshLayoutActivity"
+64-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:55:13-64
+65            android:theme="@style/Theme.Swipe.Back.NoActionBar" />
+65-->/Users/guoyong/Desktop/github_test/UI_SwipeBackLayout/app/src/main/AndroidManifest.xml:56:13-64
+66    </application>
+67
+68</manifest>

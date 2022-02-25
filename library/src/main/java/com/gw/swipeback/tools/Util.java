@@ -2,10 +2,10 @@ package com.gw.swipeback.tools;
 
 import android.app.Activity;
 import android.graphics.Rect;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.widget.RecyclerView;
+import androidx.core.view.ViewCompat;
+import androidx.viewpager.widget.ViewPager;
+import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
@@ -22,31 +22,32 @@ public class Util {
         if (mView == null || !contains(mView, x, y)) {
             return defaultValueForNull;
         }
-        return ViewCompat.canScrollVertically(mView, -1);
+        return mView.canScrollVertically( -1);
     }
 
     public static boolean canViewScrollDown(View mView, float x, float y, boolean defaultValueForNull) {
         if (mView == null || !contains(mView, x, y)) {
             return defaultValueForNull;
         }
-        return ViewCompat.canScrollVertically(mView, 1);
+        return mView.canScrollVertically(1);
     }
 
     public static boolean canViewScrollRight(View mView, float x, float y, boolean defaultValueForNull) {
         if (mView == null || !contains(mView, x, y)) {
             return defaultValueForNull;
         }
-        return ViewCompat.canScrollHorizontally(mView, -1);
+        return mView.canScrollHorizontally( -1);
     }
 
     public static boolean canViewScrollLeft(View mView, float x, float y, boolean defaultValueForNull) {
         if (mView == null || !contains(mView, x, y)) {
             return defaultValueForNull;
         }
-        return ViewCompat.canScrollHorizontally(mView, 1);
+        return mView.canScrollHorizontally( 1);
     }
 
 
+    // 找到可以滑动的view
     public static View findAllScrollViews(ViewGroup mViewGroup) {
         for (int i = 0; i < mViewGroup.getChildCount(); i++) {
             View mView = mViewGroup.getChildAt(i);

@@ -10,7 +10,7 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -28,7 +28,7 @@
 
                 <include layout="@layout/radio_group"></include>
 
-                <android.support.v4.widget.Space
+                <androidx.legacy.widget.Space
                     android:layout_width="1000dp"
                     android:layout_height="match_parent" />
             </LinearLayout>

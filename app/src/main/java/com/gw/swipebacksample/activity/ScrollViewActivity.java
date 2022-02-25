@@ -1,8 +1,6 @@
 package com.gw.swipebacksample.activity;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.util.Log;
+import androidx.annotation.Nullable;
 
 import com.gw.swipebacksample.R;
 import com.gw.swipebacksample.base.BaseSwipeBackActivity;
