@@ -1,8 +1,11 @@
 
- 知识点：1 设置Activity 透明 
-        2 根view 设置为自定义的SwipeBackLayout
-        3 ViewDragHelper的使用
-        4 overridePendingTransition activity 关闭动画取消
+ ___
+ 知识点：
+  >1 设置Activity 透明。  
+  2 根view 设置为自定义的SwipeBackLayout  
+  3 ViewDragHelper的使用  
+  4 overridePendingTransition activity 关闭动画取消  
+___
 
 
 SwipeBackLayout
